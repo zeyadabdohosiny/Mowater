@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">مواتيري</string>
+    <string name="home_tittle">الرئيسية</string>
+    <string name="packages">بطاقات مواتيري</string>
+    <string name="cars_for_sale">سيارات للبيع</string>
+    <string name="offers">عروض و اعلانات</string>
+    <string name="more">المزيد</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

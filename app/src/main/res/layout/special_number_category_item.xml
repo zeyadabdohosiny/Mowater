@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    app:cardMaxElevation="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EAE5E5">
+
+        <TextView
+            android:id="@+id/tv_special_number_name_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10sp"
+            android:text="الاسم 1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_special_number_item"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_special_number_name_item"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/applogo" />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

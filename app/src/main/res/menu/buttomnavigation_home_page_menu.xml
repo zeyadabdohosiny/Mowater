@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/ic_baseline_more_horiz_24"
+        android:title="@string/more" />
+    <item
+        android:id="@+id/nav_offers"
+        android:icon="@drawable/ic_megaphone_advertising_svgrepo_com"
+        android:title="@string/offers" />
+    <item
+        android:id="@+id/nav_cars_for_sale"
+        android:icon="@drawable/ic_sell_car_car_for_sale_selling_a_car_auto_dealership_svgrepo_com"
+        android:title="@string/cars_for_sale" />
+
+    <item
+        android:id="@+id/nav_package"
+        android:icon="@drawable/ic_discount_svgrepo_com"
+        android:title="@string/packages" />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home_tittle" />
+
+</menu>
