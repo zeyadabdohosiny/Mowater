@@ -35,7 +35,6 @@ public class SpecialNumberCategotyFragmentViewModel extends ViewModel {
                 if (response.isSuccessful()) {
                     specialNumberList.setValue(response.body().getData());
                     if (view != null) {
-
                         view.hideProgressBar();
                     }
 

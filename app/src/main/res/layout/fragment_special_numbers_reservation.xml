@@ -5,13 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragment.SpecialNumbersReservation.SpecialNumbersReservationFragment">
-
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/mowater_color"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:textDirection="ltr"
-        android:weightSum="10">
+        android:weightSum="10"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/mowater_color"/>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,7 +66,7 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="1.5"
                             android:background="@color/scrollbar_thumb_color_dark"
                             android:gravity="center">
 
@@ -69,7 +86,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
-                            android:layout_weight="4"
+                            android:layout_weight="4.5"
                             android:orientation="vertical"
                             android:weightSum="4">
 
@@ -146,7 +163,7 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_weight="0"
                             android:gravity="center">
 
                         </LinearLayout>
@@ -417,6 +434,7 @@
                 android:layout_weight="2"
                 android:orientation="horizontal"
                 android:weightSum="4">
+
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_special_number_Verification"
                     android:layout_width="0dp"
@@ -427,7 +445,8 @@
                     android:background="@drawable/corner_shape"
                     android:text="التحقق من الهويه"
                     android:textColor="@color/white"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:visibility="visible"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_special_number_reserve"
                     android:layout_width="0dp"
@@ -440,7 +459,15 @@
                     android:text="حجز اللوحه"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
-
+                <ProgressBar
+                    android:id="@+id/progess_bar_reservation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="@color/mowater_color"
+                    />
 
 
 

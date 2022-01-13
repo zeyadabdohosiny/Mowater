@@ -1,5 +1,7 @@
 plugins {
     id 'com.android.application'
+    id 'androidx.navigation.safeargs'
+    id 'kotlin-android'
 }
 
 android {
@@ -48,6 +50,11 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'    //Picaso Libarry to Get Image
     implementation 'com.android.support:cardview-v7:28.0.0' // CardView
     implementation 'com.android.support:design:28.0.0'
+
+    implementation 'androidx.navigation:navigation-fragment:2.3.5' // NavController
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+
+
 
 
 }

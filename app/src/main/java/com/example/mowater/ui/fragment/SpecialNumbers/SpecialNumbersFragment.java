@@ -39,14 +39,12 @@ public class SpecialNumbersFragment extends Fragment implements SpecialNumberCon
     ProgressBar progressBar;
     //ViewModle
     SpecialNumberViewModel viewModel;
-
-
-    private static final String ARG_PARAM2 = "param2";
     // Variables
+    private static final String ARG_PARAM2 = "param2";
     private Integer categoryId;
     //Adapter
     SpecialNumbersAdapter specialNumberadapter;
-    Datum datum;
+
 
     public SpecialNumbersFragment() {
         // Required empty public constructor
@@ -98,7 +96,6 @@ public class SpecialNumbersFragment extends Fragment implements SpecialNumberCon
             specialNumberList.observe(getViewLifecycleOwner(), new Observer<List<Datum>>() {
                 @Override
                 public void onChanged(List<Datum> data) {
-                    datum = data.get(0);
                     specialNumberadapter = new SpecialNumbersAdapter(data);
                     rvSpecialNumbers.setAdapter(specialNumberadapter);
                     specialNumberadapter.onClickListner(new SpecialNumbersAdapter.OnItemClickListner() {

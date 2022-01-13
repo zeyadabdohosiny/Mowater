@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agency_nav_host"
+    app:startDestination="@id/agencyCategoriesFragment">
+
+    <fragment
+        android:id="@+id/agencyCategoriesFragment"
+        android:name="com.example.mowater.ui.fragment.Agency.AgencyCategories.AgencyCategoriesFragment"
+        android:label="fragment_agency_categories"
+        tools:layout="@layout/fragment_agency_categories">
+        <action
+            android:id="@+id/action_agencyCategoriesFragment_to_agencyDetailsFragment"
+            app:destination="@id/agencyDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agencyDetailsFragment"
+        android:name="com.example.mowater.ui.fragment.Agency.AgencyDetails.AgencyDetailsFragment"
+        android:label="fragment_agency_details"
+        tools:layout="@layout/fragment_agency_details">
+        <argument
+            android:name="agencyId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_agencyDetailsFragment_to_agencyMoreDetailsFragment"
+            app:destination="@id/agencyMoreDetailsFragment" />
+        <action
+            android:id="@+id/action_agencyDetailsFragment_to_agencyMoreDetailsFragment2"
+            app:destination="@id/agencyMoreDetailsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/agencyMoreDetailsFragment"
+        android:name="com.example.mowater.ui.fragment.Agency.AgencyMoreDetails.AgencyMoreDetailsFragment"
+        android:label="fragment_agency_more_details"
+        tools:layout="@layout/fragment_agency_more_details">
+        <argument
+            android:name="agencyId"
+            app:argType="integer" />
+        <argument
+            android:name="agency_object"
+            app:argType="com.example.mowater.data.models.agencyDetails.Data" />
+        <action
+            android:id="@+id/action_agencyMoreDetailsFragment_to_carClassesFragment"
+            app:destination="@id/carClassesFragment" />
+        <action
+            android:id="@+id/action_agencyMoreDetailsFragment_to_carClassesFragment2"
+            app:destination="@id/carClassesFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/carClassesFragment"
+        android:name="com.example.mowater.ui.fragment.Agency.AgencyCarClasses.AgencyCarClassesFragment"
+        android:label="fragment_car_classes"
+        tools:layout="@layout/fragment_agency_car_classes">
+        <argument
+            android:name="carClasses"
+            app:argType="com.example.mowater.data.models.agencyDetails.CarModel" />
+        <argument
+            android:name="agencyId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_carClassesFragment_to_agencyVehiclesFragment"
+            app:destination="@id/agencyVehiclesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agencyVehiclesFragment"
+        android:name="com.example.mowater.ui.fragment.Agency.AgencyVehicles.AgencyVehiclesFragment"
+        android:label="fragment_agency_vehicles"
+        tools:layout="@layout/fragment_agency_vehicles">
+        <argument
+            android:name="agencyId"
+            app:argType="integer" />
+        <argument
+            android:name="model_type"
+            app:argType="string" />
+        <argument
+            android:name="carModelId"
+            app:argType="integer" />
+        <argument
+            android:name="carClassId"
+            app:argType="integer" />
+
+    </fragment>
+</navigation>

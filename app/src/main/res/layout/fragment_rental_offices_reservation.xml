@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.RentalOfficesReservation.RentalOfficesReservationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:textDirection="ltr"
+        android:visibility="visible"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:background="@color/mowater_color">
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:textDirection="ltr"
+                android:visibility="visible"
+                android:weightSum="6">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:layout_margin="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/LoginTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:hint="الاسم"
+                            android:layoutDirection="rtl"
+                            android:textDirection="rtl"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                            app:hintTextColor="@color/base_color">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_rental_office_reservation_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:shadowColor="@color/base_color"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/base_color" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            style="@style/LoginTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:hint="الرقم الشخصي"
+                            android:layoutDirection="rtl"
+                            android:textDirection="rtl"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                            app:hintTextColor="@color/base_color">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_rental_office_reservation_id_card_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:shadowColor="@color/base_color"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/base_color" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/LoginTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:hint="الهاتف"
+                            android:layoutDirection="rtl"
+                            android:textDirection="rtl"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                            app:hintTextColor="@color/base_color">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_rental_office_reservation_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:shadowColor="@color/base_color"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/base_color" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/LoginTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:hint="العنوان"
+                            android:layoutDirection="rtl"
+                            android:textDirection="rtl"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                            app:hintTextColor="@color/base_color">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_rental_office_reservation_adress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:shadowColor="@color/base_color"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/base_color" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/LoginTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:hint="وقت البدأ"
+                            android:layoutDirection="rtl"
+                            android:textDirection="rtl"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                            app:hintTextColor="@color/base_color">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_rental_office_reservation_start_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:shadowColor="@color/base_color"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/base_color" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/LoginTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:hint="نوع الايجار"
+                            android:layoutDirection="rtl"
+                            android:textDirection="rtl"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                            app:hintTextColor="@color/base_color">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_special_number_reservation_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:shadowColor="@color/base_color"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/base_color" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/LoginTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:hint="طريقه الدفع"
+                            android:layoutDirection="rtl"
+                            android:textDirection="rtl"
+                            app:hintTextAppearance="@style/TextAppearance.AppCompat.Small"
+                            app:hintTextColor="@color/base_color">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_special_number_reservation_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:shadowColor="@color/base_color"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/base_color" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:orientation="vertical"
+            android:weightSum="4">
+            <!--            llIdCard -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+
+                <TextView
+                    android:id="@+id/tv_reservation_back_id_card"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/tv_reservation_id_license"
+                    android:gravity="center"
+                    android:text="خلفي"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_reservation_front_id_card"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/tv_reservation_id_license"
+                    android:gravity="center"
+                    android:text="امامي"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="البطاقه"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <!--llDrivingLicense -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+
+                <TextView
+                    android:id="@+id/tv_reservation_back_driving_license"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/tv_reservation_id_license"
+                    android:gravity="center"
+                    android:text="خلفي"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_reservation_fron_driving_license"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/tv_reservation_id_license"
+                    android:gravity="center"
+                    android:text="امامي"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="الرخصه"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_rental_office_reserve"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/corner_shape"
+                    android:backgroundTint="@color/mowater_color"
+                    android:text="حجز اللوحه"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progess_bar_reservation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:indeterminateTint="@color/mowater_color"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mowater">
         <activity
+            android:name=".ui.activities.agency.AgencyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.RentalOffices.RentalofficesActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.activities.Home.HomeActivity"
             android:exported="true" />
         <activity

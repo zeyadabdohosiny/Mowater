@@ -6,5 +6,11 @@ public interface SpecialNumbersReservationContract {
         void setData();
         void getReservationData();
         void HandleClick();
+        void showProgressBar();
+        void hideProgressBar();
+        void showMessage(String message);
+        void showReserveProgress();
+        void hideReserveProgress();
+
     }
 }

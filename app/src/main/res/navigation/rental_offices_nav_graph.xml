@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/storyboard"
+    app:startDestination="@id/rentalOfficesCategoriesFragment">
+
+    <fragment
+        android:id="@+id/rentalOfficesFragment"
+        android:name="com.example.mowater.ui.fragment.RentalOfficeCars.RentalOfficeCarFragment"
+        android:label="fragment_rental_offices"
+        tools:layout="@layout/fragment_rental_offices" >
+       <argument
+           android:name="rentalofficesId"
+           app:argType="integer"/>
+        <action
+            android:id="@+id/action_rentalOfficesFragment_to_rentalOfficesReservationFragment"
+            app:destination="@id/rentalOfficesReservationFragment" />
+    </fragment>
+
+        <fragment
+            android:id="@+id/rentalOfficesCategoriesFragment"
+            android:name="com.example.mowater.ui.fragment.RentalOfficesCategories.RentalOfficesCategoriesFragment"
+            android:label="fragment_rental_offices_categories"
+            tools:layout="@layout/fragment_rental_offices_categories">
+
+            <action
+                android:id="@+id/action_rentalOfficesCategoriesFragment_to_rentalOfficesFragment2"
+                app:destination="@id/rentalOfficesFragment" />
+        </fragment>
+
+    <fragment
+        android:id="@+id/rentalOfficesReservationFragment"
+        android:name="com.example.mowater.ui.fragment.RentalOfficesReservation.RentalOfficesReservationFragment"
+        android:label="fragment_rental_offices_reservation"
+        tools:layout="@layout/fragment_rental_offices_reservation" >
+
+        <argument
+            android:name="rentalOfficeObjcet"
+            app:argType="com.example.mowater.data.models.RentalOffices.RentalOffices"/>
+        <action
+            android:id="@+id/action_rentalOfficesReservationFragment_to_rentalOfficesCategoriesFragment2"
+            app:destination="@id/rentalOfficesCategoriesFragment" />
+    </fragment>
+</navigation>

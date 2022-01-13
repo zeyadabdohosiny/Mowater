@@ -1,7 +1,7 @@
 package com.example.mowater.ui.fragment.Home;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +25,8 @@ import com.example.mowater.adapters.SectionsAdapter;
 import com.example.mowater.adapters.VideoSliderAdapter;
 import com.example.mowater.data.models.Sections.Datum;
 import com.example.mowater.data.models.Video.Videoo;
+import com.example.mowater.ui.activities.RentalOffices.RentalofficesActivity;
+import com.example.mowater.ui.activities.agency.AgencyActivity;
 import com.example.mowater.ui.fragment.SpecialNumbersCategory.SpecialNumberCategoryFragment;
 
 import java.util.ArrayList;
@@ -98,9 +100,13 @@ public class HomeFragment extends Fragment implements HomeFragmentContract.View 
                             sectionName = data.get(position).getRefName();
                             switch (sectionName) {
                                 case "Agencies":
+                                    startActivity(new Intent(getContext(), AgencyActivity.class));
                                     break;
                                 case "SpecialNumbers":
                                     replaceFragment(new SpecialNumberCategoryFragment());
+                                    break;
+                                case "RentalOffices":
+                                    startActivity(new Intent(getContext(), RentalofficesActivity.class));
                                     break;
                             }
 
