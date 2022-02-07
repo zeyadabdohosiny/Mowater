@@ -25,6 +25,7 @@ import com.example.mowater.adapters.SectionsAdapter;
 import com.example.mowater.adapters.VideoSliderAdapter;
 import com.example.mowater.data.models.Sections.Datum;
 import com.example.mowater.data.models.Video.Videoo;
+import com.example.mowater.ui.activities.CarShowRoom.CarShowRoomActivity;
 import com.example.mowater.ui.activities.RentalOffices.RentalofficesActivity;
 import com.example.mowater.ui.activities.agency.AgencyActivity;
 import com.example.mowater.ui.fragment.SpecialNumbersCategory.SpecialNumberCategoryFragment;
@@ -68,9 +69,9 @@ public class HomeFragment extends Fragment implements HomeFragmentContract.View 
 
     private void videoTest() {
         ArrayList<Videoo> list = new ArrayList<>();
-        String firstVideo = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.video;
+       // String firstVideo = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.video;
         String secondVideo = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.production_4568812;
-        list.add(new Videoo(firstVideo));
+        list.add(new Videoo(secondVideo));
         list.add(new Videoo(secondVideo));
         adapter = new VideoSliderAdapter(list, viewPager2);
         viewPager2.setOffscreenPageLimit(list.size());
@@ -107,6 +108,9 @@ public class HomeFragment extends Fragment implements HomeFragmentContract.View 
                                     break;
                                 case "RentalOffices":
                                     startActivity(new Intent(getContext(), RentalofficesActivity.class));
+                                    break;
+                                case "CarShowrooms":
+                                    startActivity(new Intent(getContext(), CarShowRoomActivity.class));
                                     break;
                             }
 

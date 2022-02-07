@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mwatery_nav"
+    app:startDestination="@id/myCarsFragment">
+
+    <fragment
+        android:id="@+id/myCarsFragment"
+        android:name="com.example.mowater.ui.fragment.Mwatery.MyCars.MyCarsFragment"
+        android:label="fragment_my_cars"
+        tools:layout="@layout/fragment_my_cars" >
+        <action
+            android:id="@+id/action_myCarsFragment_to_addCarFragment"
+            app:destination="@id/addCarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCarFragment"
+        android:name="com.example.mowater.ui.fragment.Mwatery.AddCar.AddCarFragment"
+        android:label="fragment_add_car"
+        tools:layout="@layout/fragment_add_car" />
+</navigation>

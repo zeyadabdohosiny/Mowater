@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/car_show_room_nav"
+    app:startDestination="@id/carShowRoomsCategoriesFragment">
+
+    <fragment
+        android:id="@+id/carShowRoomsCategoriesFragment"
+        android:name="com.example.mowater.ui.fragment.CarShowRoom.CarShowRoomCategories.CarShowRoomsCategoriesFragment"
+        android:label="CarShowRoomsCategoriesFragment">
+        <action
+            android:id="@+id/action_carShowRoomsCategoriesFragment_to_carShowRoomDetails"
+            app:destination="@id/carShowRoomDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/carShowRoomDetails"
+        android:name="com.example.mowater.ui.fragment.CarShowRoom.CarShowRoomDetails.CarShowRoomDetailsFragment"
+        android:label="fragment_car_show_room_details"
+        tools:layout="@layout/fragment_car_show_room_details">
+        <argument
+            android:name="carShowRoomId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_carShowRoomDetails_to_carShowRoomMoreDetailsFragment"
+            app:destination="@id/carShowRoomMoreDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carShowRoomMoreDetailsFragment"
+        android:name="com.example.mowater.ui.fragment.CarShowRoom.CarShowRoomMoreDetails.CarShowRoomMoreDetailsFragment"
+        android:label="fragment_car_show_room_more_details"
+        tools:layout="@layout/fragment_car_show_room_more_details" >
+        <argument
+            android:name="carShowRoomId"
+            app:argType="integer" />
+        <argument
+            android:name="carShowRoom_object"
+            app:argType="com.example.mowater.data.models.CarShowRoomDetails.Data"/>
+
+    </fragment>
+</navigation>

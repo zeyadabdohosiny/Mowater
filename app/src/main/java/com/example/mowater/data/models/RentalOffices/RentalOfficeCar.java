@@ -3,7 +3,9 @@ package com.example.mowater.data.models.RentalOffices;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class RentalOfficeCar {
+import java.io.Serializable;
+
+public class RentalOfficeCar implements Serializable {
 
     @SerializedName("id")
     @Expose

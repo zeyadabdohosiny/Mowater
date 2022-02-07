@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="20dp"
-    android:layout_margin="10dp"
+    android:layout_margin="2dp"
     app:cardMaxElevation="25dp"
     >
 
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:gravity="center"
-        android:background="@color/grey_mazbot">
+        >
 
         <TextView
             android:id="@+id/tvSectionName"
@@ -25,7 +25,9 @@
             android:textStyle="bold"
             android:text="Zeyad"
             android:textColor="@color/black"
+           
             />
+
 
     </RelativeLayout>
 

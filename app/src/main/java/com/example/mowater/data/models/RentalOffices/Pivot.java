@@ -3,7 +3,9 @@ package com.example.mowater.data.models.RentalOffices;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Pivot {
+import java.io.Serializable;
+
+public class Pivot implements Serializable {
 
     @SerializedName("model_id")
     @Expose

@@ -2,11 +2,58 @@
 
 <resources>
     <string name="app_name">مواتيري</string>
-    <string name="home_tittle">Home</string>
-    <string name="packages">Packages</string>
-    <string name="cars_for_sale">cars for sale</string>
-    <string name="offers">offers</string>
-    <string name="more">more</string>
+    <string name="home_tittle">الرئيسية</string>
+    <string name="packages">بطاقات مواتيري</string>
+    <string name="cars_for_sale">سيارات للبيع</string>
+    <string name="offers">عروض و اعلانات</string>
+    <string name="more">المزيد</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="internal_storage">internal strage</string>
+    <string name="name">الاسم</string>
+    <string name="password">الرقم السري</string>
+    <string name="confirm_password">تأكيد الرقم السري</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="mail">البريد الالكتروني</string>
+    <string name="gender">النوع</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثي</string>
+    <string name="date_of_birth">تاريخ الميلاد</string>
+    <string name="register">تسجيل</string>
+    <string name="reserve_vehicles">حجز السياره</string>
+    <string name="test_drive">تجربه السياره</string>
+    <string name="choose_day">اختر اليوم</string>
+    <string name="no_data_to_show">لا يوجد شيئ لاظهاره</string>
+    <string name="my_cars">سياراتي</string>
+    <string name="vehicle_Type">نوع المركبه             : </string>
+    <string name="car_brand">الماركه                :      </string>
+    <string name="car_model">الموديل               :      </string>
+    <string name="car_class">الفئه               :      </string>
+    <string-array name="vehicale_types">
+        <item> trucks</item>
+        <item> cars </item>
+    </string-array>
+    <string name="body_shape_hatchback">هاتش باك</string>
+    <string name="body_shape_sedan">سيدان</string>
+    <string name="body_shape">شكل الجسم :</string>
+    <string name="welcome">مرحبا بك</string>
+    <string name="menufacturing_year">سنه الصنع</string>
+    <string name="traveled_distance">المسافه المقطوعه           :</string>
+    <string name="price">السعر</string>
+    <string name="car_state">حاله السياره</string>
+    <string name="add_car">اضافه السياره</string>
+    <string name="car_color">لون السياره</string>
+    <string name="car_warranty">السياره لها ضمان </string>
+    <string name="pick_the_year">أختر السنه</string>
+    <string name="selling_by_numbre_plate">البيع بلوحه الارقام </string>
+    <string name="plate_number">رقم الللوحه</string>
+    <string name="about_the_car">نبذه عن السياره</string>
+    <string name="car_for_sale">السياره للبيع </string>
+    <string name="car_is_at_bahrin"> السياره بالبحرين</string>
+    <string name="country">البلد</string>
+    <string name="city">المدينه</string>
+    <string name="area">المنطقه</string>
+    <string name="choose_country">اختر البلد</string>
+    <string name="choose_city">اختر المدينه</string>
+    <string name="choose_area">اختر المنطقه</string>
 </resources>

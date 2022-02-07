@@ -1,17 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-   <ImageView
-       android:id="@+id/hello"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:src="@drawable/applogo"
-       android:scaleType="fitXY"/>
+       <ImageView
+           android:id="@+id/hello"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:src="@drawable/applogo"
+           android:scaleType="fitXY"/>
+    <!--   <TextView-->
+    <!--       android:id="@+id/date_id"-->
+    <!--       android:layout_width="match_parent"-->
+    <!--       android:layout_height="wrap_content"-->
+    <!--       android:text=""/>-->
+
+    <!--   <Button-->
+    <!--       android:id="@+id/btn"-->
+    <!--       android:layout_width="wrap_content"-->
+    <!--       android:layout_height="wrap_content"-->
+    <!--       app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--       app:layout_constraintEnd_toEndOf="parent"-->
+    <!--       app:layout_constraintHorizontal_bias="0.498"-->
+    <!--       app:layout_constraintStart_toStartOf="parent"-->
+    <!--       app:layout_constraintTop_toBottomOf="@+id/date_id"-->
+    <!--       app:layout_constraintVertical_bias="0.674" />-->
+
+    <!--   <com.google.android.material.textfield.MaterialAutoCompleteTextView-->
+    <!--       android:id="@+id/ac_area_ads"-->
+    <!--       android:layout_width="match_parent"-->
+    <!--       android:layout_height="match_parent"-->
+    <!--       android:gravity=""-->
+    <!--       android:inputType="none"-->
+    <!--       android:padding="2dp"-->
+    <!--       android:text="name"-->
+    <!--       android:textColor="@color/gold"-->
+    <!--       android:textSize="20sp"-->
+    <!--       tools:layout_editor_absoluteX="0dp"-->
+    <!--       tools:layout_editor_absoluteY="0dp"-->
+
+    <!--       />-->
+   <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+       android:id="@+id/fabMainicon"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentBottom="true"
+       app:fab_addButtonColorNormal="#E52B73"
+       app:fab_labelStyle="@style/floataction"
+       app:icon="@drawable/ic_baseline_phone_24"
+       app:tint="@android:color/white"
+       android:backgroundTint="@color/mowater_color"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabMainicon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="38dp"
+        android:src="@drawable/ic_baseline_phone_24"
+        android:visibility="visible"
+
+        app:tint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="60dp"
+        android:layout_toLeftOf="@+id/fabCall"
+        android:text="Chat"
+        android:layout_above="@+id/fabMainicon"
+        android:textStyle="bold"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="60dp"
+        android:layout_toLeftOf="@+id/fabCall"
+        android:text="Chat"
+        android:layout_above="@+id/tv_call"
+        />
+<!--   <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--       android:id="@+id/fabWhatsApp"-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:layout_above="@+id/fabCall"-->
+<!--       android:layout_alignParentEnd="true"-->
+<!--       android:layout_marginStart="10dp"-->
+<!--       android:layout_marginTop="10dp"-->
+<!--       android:layout_marginEnd="37dp"-->
+<!--       android:layout_marginBottom="42dp"-->
+
+<!--       android:src="@drawable/ic_baseline_login_24"-->
+<!--       android:visibility="gone"-->
+<!--       app:fab_title="What`sApp" />-->
+
+   <!--      <com.getbase.floatingactionbutton.FloatingActionButton-->
+    <!--          android:id="@+id/fabSms"-->
+    <!--          android:layout_width="wrap_content"-->
+    <!--          android:layout_height="wrap_content"-->
+    <!--          android:src="@drawable/ic_baseline_login_24"-->
+    <!--          android:tint="@color/white"-->
+    <!--          app:fab_colorNormal="#E52B73"-->
+    <!--          app:fab_title="Send Sms" />-->
+
+    <!--   <com.getbase.floatingactionbutton.FloatingActionButton-->
+    <!--       android:id="@+id/fabChat"-->
+    <!--       android:layout_width="wrap_content"-->
+    <!--       android:layout_height="wrap_content"-->
+    <!--       android:src="@drawable/ic_baseline_login_24"-->
+    <!--       android:tint="@color/white"-->
+    <!--       app:fab_colorNormal="#E52B73"-->
+    <!--       app:fab_title="Chat" />-->
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

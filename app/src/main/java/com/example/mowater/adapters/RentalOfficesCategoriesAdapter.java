@@ -4,6 +4,7 @@ package com.example.mowater.adapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,7 +34,7 @@ public class RentalOfficesCategoriesAdapter extends RecyclerView.Adapter<RentalO
     public class RentalOfficesCategoriesViewHolder extends RecyclerView.ViewHolder {
 
         TextView tvRentalOfficesName;
-        CircleImageView ivRentalOffices;
+        ImageView ivRentalOffices;
 
         public RentalOfficesCategoriesViewHolder(@NonNull View itemView, onItemClickListner listner) {
             super(itemView);

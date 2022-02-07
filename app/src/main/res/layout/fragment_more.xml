@@ -25,10 +25,10 @@
 
     <ScrollView
 
-        android:layout_below="@+id/header_relative"
         android:layout_width="match_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_relative"
+        android:layout_marginBottom="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,32 +38,35 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/strok_rosasy"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:padding="10dp">
-
 
 
                 <TextView
                     android:id="@+id/tv_setting"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_profile_svgrepo_com__2_"
+                    android:drawablePadding="10dp"
+                    android:gravity="start"
                     android:padding="5dp"
                     android:text="الملف الشخصي"
-                    android:drawableRight="@drawable/ic_profile_svgrepo_com__2_"
-                    android:gravity="start"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
                     android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
                     />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/strok_rosasy"
@@ -71,19 +74,46 @@
                 android:orientation="horizontal"
                 android:padding="10dp">
 
+
+                <TextView
+                    android:id="@+id/tv_mwatery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_baseline_directions_car_24"
+                    android:drawablePadding="10dp"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:text="مواتري"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/strok_rosasy"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
 
                 <TextView
                     android:id="@+id/my_favourite_tv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_baseline_favorite_border_24"
+                    android:drawablePadding="10dp"
+                    android:gravity="start"
                     android:padding="5dp"
                     android:text="المفضله"
-                    android:drawableRight="@drawable/ic_baseline_favorite_border_24"
-                    android:gravity="start"
-                    android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
-                    android:textColor="@color/black" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -91,58 +121,60 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/strok_rosasy"
                 android:gravity="end"
                 android:orientation="horizontal"
                 android:padding="10dp">
-
 
 
                 <TextView
                     android:id="@+id/tv_rate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="قيم التطبيق"
                     android:drawableRight="@drawable/ic_baseline_star_rate_24"
                     android:gravity="start"
-                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:text="قيم التطبيق"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
-                    android:textColor="@color/black" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/strok_rosasy"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:padding="10dp">
-
 
 
                 <TextView
                     android:id="@+id/tv_support"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_support_svgrepo_com"
+                    android:drawablePadding="10dp"
+                    android:gravity="start"
                     android:padding="5dp"
                     android:text="الدعم و المساعده"
-                    android:drawableRight="@drawable/ic_support_svgrepo_com"
-                    android:gravity="start"
-                    android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
-                    android:textColor="@color/black" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/strok_rosasy"
@@ -151,24 +183,25 @@
                 android:padding="10dp">
 
 
-
                 <TextView
                     android:id="@+id/tv_call_us"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_baseline_phone_24"
+                    android:drawablePadding="10dp"
+                    android:gravity="start"
                     android:padding="5dp"
                     android:text="تواصل معنا"
-                    android:drawableRight="@drawable/ic_baseline_phone_24"
-                    android:gravity="start"
-                    android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
-                    android:textColor="@color/black" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/strok_rosasy"
@@ -179,21 +212,21 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_exclamation_mark_in_circles_svgrepo_com"
+                    android:gravity="start"
                     android:padding="10dp"
                     android:text="اتفاقيه الاستخدام"
-                    android:gravity="start"
-                    android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:drawableEnd="@drawable/ic_exclamation_mark_in_circles_svgrepo_com"
-                    />
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"/>
 
             </LinearLayout>
-
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/strok_rosasy"
@@ -202,22 +235,21 @@
                 android:padding="10dp">
 
 
-
                 <TextView
                     android:id="@+id/tv_login_more"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_baseline_login_24"
+                    android:gravity="start"
                     android:padding="5dp"
                     android:text="خروج"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                    android:drawableRight="@drawable/ic_baseline_login_24"
-                    android:gravity="start"
-                    android:textStyle="bold"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
-                    android:textColor="@color/black"/>
+                    android:textStyle="bold"
+                    android:drawablePadding="10dp"/>
 
             </LinearLayout>
-
 
 
         </LinearLayout>

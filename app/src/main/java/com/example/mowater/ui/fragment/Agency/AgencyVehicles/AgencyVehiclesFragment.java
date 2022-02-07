@@ -1,11 +1,11 @@
 package com.example.mowater.ui.fragment.Agency.AgencyVehicles;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,12 +19,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mowater.R;
 import com.example.mowater.adapters.AgencyVehiclesAdapter;
-import com.example.mowater.data.api.ApiClient;
+import com.example.mowater.data.models.vehicles.Datum;
 import com.example.mowater.data.models.vehicles.Vehicles;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import com.example.mowater.ui.activities.Vehicle.VehicleActivity;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 
 public class AgencyVehiclesFragment extends Fragment implements AgencyVehiclesContract.View{
@@ -62,8 +61,6 @@ public class AgencyVehiclesFragment extends Fragment implements AgencyVehiclesCo
     @Override
     public void initUi() {
         rvVehicles=getView().findViewById(R.id.rv_agency_vehicles);
-
-        
     }
 
     @Override
@@ -81,8 +78,21 @@ public class AgencyVehiclesFragment extends Fragment implements AgencyVehiclesCo
             vehicles.observe(getViewLifecycleOwner(), new Observer<Vehicles>() {
                 @Override
                 public void onChanged(Vehicles vehicles) {
-                    adapter=new AgencyVehiclesAdapter(vehicles.getData());
+                    adapter = new AgencyVehiclesAdapter(vehicles.getData());
                     rvVehicles.setAdapter(adapter);
+                    adapter.setOnItemClickListner(new AgencyVehiclesAdapter.OnItemClickListner() {
+                        @Override
+                        public void onItemClickListner(int position) {
+                            Datum vehicle = vehicles.getData().get(position);
+                            Intent vehicleActivityIntent = new Intent(getView().getContext(), VehicleActivity.class);
+                            Gson gson = new GsonBuilder().create();
+                            String vehicleObject = gson.toJson(vehicle);
+                            vehicleActivityIntent.putExtra("vehicle_object",vehicleObject);
+                            vehicleActivityIntent.putExtra("agency_id",agencyId);
+                            vehicleActivityIntent.putExtra("flag","agency");
+                            startActivity(vehicleActivityIntent);
+                        }
+                    });
                 }
             });
         }

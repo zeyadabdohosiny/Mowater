@@ -22,8 +22,6 @@ import com.example.mowater.data.models.agencyDetails.Data;
 
 
 public class AgencyMoreDetailsFragment extends Fragment implements AgencyMoreDetailsContract.View {
-    //Views
-
     //Variables
     int agencyId;
     Data agencyObject;
@@ -50,8 +48,6 @@ public class AgencyMoreDetailsFragment extends Fragment implements AgencyMoreDet
         viewModel = ViewModelProviders.of(this).get(AgencyMoreDetailsViewModel.class);
         viewModel.setContract(this);
         viewModel.start();
-
-
     }
 
     public void initUi() {

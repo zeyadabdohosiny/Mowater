@@ -19,5 +19,7 @@ public interface RentalOfficeReservationContract {
 
         void hideReserveProgress();
 
+        void choseImageFromGallery();
+
     }
 }

@@ -39,6 +39,7 @@ public class HomeFragmentViewModel extends ViewModel {
                 } else {
                     if (view != null) {
                         view.hideProgressBar();
+                        view.showMessage(response.message());
                     }
                 }
             }

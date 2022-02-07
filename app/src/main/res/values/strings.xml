@@ -1,10 +1,57 @@
 <resources>
     <string name="app_name">مواتيري</string>
-    <string name="home_tittle">الرئيسية</string>
-    <string name="packages">بطاقات مواتيري</string>
-    <string name="cars_for_sale">سيارات للبيع</string>
-    <string name="offers">عروض و اعلانات</string>
-    <string name="more">المزيد</string>
+    <string name="home_tittle">Home</string>
+    <string name="packages">Packages</string>
+    <string name="cars_for_sale">cars for sale</string>
+    <string name="offers">offers</string>
+    <string name="more">more</string>
+    <string name="internal_storage">internal strage</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirmPassword</string>
+    <string name="phone">Phone</string>
+    <string name="mail">Mail</string>
+    <string name="gender">gender</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="date_of_birth">DateOfBirth</string>
+    <string name="register">Register</string>
+    <string name="reserve_vehicles">Reserve Vehicale</string>
+    <string name="test_drive">Test Drive</string>
+    <string name="choose_day">Choose Day</string>
+    <string name="no_data_to_show">No Thing To Show</string>
+    <string name="my_cars">My Cars</string>
+    <string name="vehicle_Type"> Vehicle Type           :</string>
+    <string name="car_brand">Car Brand                :      </string>
+    <string name="car_model">Car Model               :      </string>
+    <string name="car_class">Car Class               :      </string>
+    <string-array name="vehicale_types">
+        <item > trucks</item>
+        <item> cars </item>
+    </string-array>
+    <string name="body_shape_hatchback">hatchback</string>
+    <string name="body_shape_sedan">sedan</string>
+    <string name="body_shape">Body Shape</string>
+    <string name="welcome">Welcome</string>
+    <string name="menufacturing_year">menufacturing</string>
+    <string name="traveled_distance">Traveled Distance</string>
+    <string name="price">Price</string>
+    <string name="car_state">Car State</string>
+    <string name="add_car">Add Car</string>
+    <string name="car_color">Car Color</string>
+    <string name="car_warranty">The vehicle has a warranty </string>
+    <string name="pick_the_year">pick the yaer</string>
+    <string name="plate_number">plate number</string>
+    <string name="selling_by_numbre_plate">selling with platte number </string>
+    <string name="about_the_car">about the car</string>
+    <string name="car_for_sale"> car for sale </string>
+    <string name="car_is_at_bahrin"> car is at bahrin</string>
+    <string name="country">country</string>
+    <string name="city">city</string>
+    <string name="area">area</string>
+    <string name="choose_country">Country</string>
+    <string name="choose_city">choose city</string>
+    <string name="choose_area">choose area</string>
 </resources>

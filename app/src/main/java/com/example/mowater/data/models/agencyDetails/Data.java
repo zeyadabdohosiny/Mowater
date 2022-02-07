@@ -1,12 +1,14 @@
 package com.example.mowater.data.models.agencyDetails;
 
+import androidx.annotation.Keep;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 import java.util.List;
-
-public class Data implements Serializable {
+@Keep
+public class Data implements Serializable  {
 
     @SerializedName("id")
     @Expose

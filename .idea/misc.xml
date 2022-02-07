@@ -4,49 +4,77 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable-v24/style_edittext.xml" value="0.19315068493150686" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/black_border.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/card_view_border.xml" value="0.215625" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/corner_shape.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/et_reservation_shape.xml" value="0.2123076923076923" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/fav_24.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/ic_baseline_more_horiz_24.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/ic_baseline_star_rate_24.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/ic_discount_svgrepo_com.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/ic_dolar_svgrepo_com.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/ic_exclamation_mark_in_circles_svgrepo_com.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/ic_launcher_background.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/ic_megaphone_advertising_svgrepo_com.xml" value="0.15092592592592594" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/ic_profile_svgrepo_com.xml" value="0.19315068493150686" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/strok_rosasy.xml" value="0.19315068493150686" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/strok_rosasy.xml.xml" value="0.19315068493150686" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/transparent_shape_with_black_stroke.xml" value="0.18055555555555555" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/tv_reservation_id_license.xml" value="0.67" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/tv_special_number_item_shape.xml" value="0.5" />
-        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_agency.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/drawable/views_number.xml" value="0.19315068493150686" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_agency.xml" value="0.1" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_car_show_room.xml" value="0.1" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_home.xml" value="0.3851851851851852" />
-        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_mwatery.xml" value="0.1" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_rentaloffices.xml" value="0.22" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_test_drive.xml" value="0.20208604954367665" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_vehicale_reservation.xml" value="0.22" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/activity_vehicles.xml" value="0.2" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/agency_more_details_item.xml" value="0.30662983425414364" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/agncy_more_details_item.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/available_time_item.xml" value="0.5379061371841155" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/cars_for_sale_item.xml" value="0.33" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/connection_alert_dialog.xml" value="0.67" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_add_car.xml" value="0.33" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_agency_car_classes.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_agency_categories.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_agency_details.xml" value="0.22" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_agency_more_details.xml" value="0.18" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_agency_vehicles.xml" value="0.25" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_car_classes.xml" value="0.18" />
-        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_cars_for_sale.xml" value="0.25" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_car_show_room_details.xml" value="0.25" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_car_show_room_more_details.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_car_show_rooms_categories.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_cars_for_sale.xml" value="0.22004357298474944" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_error_dialog.xml" value="0.1814814814814815" />
-        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_home.xml" value="0.28769017980636236" />
-        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_more.xml" value="0.26277372262773724" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_more.xml" value="0.25206611570247933" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_my_cars.xml" value="0.67" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_offers.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_package.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_rental_offices.xml" value="0.25" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_rental_offices_categories.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_rental_offices_reservation.xml" value="0.14" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_rental_offices_reservation.xml" value="0.4004914004914005" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_special_number.xml" value="0.2752420470262794" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_special_numbers.xml" value="0.2" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/fragment_special_numbers_reservation.xml" value="0.18" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/rental_offices_categories_item.xml" value="0.20102564102564102" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/rental_offices_item.xml" value="0.33183856502242154" />
-        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/section_categories_item.xml" value="0.1814814814814815" />
-        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/sections_item.xml" value="0.22" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/section_categories_item.xml" value="0.67" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/sections_item.xml" value="0.14" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/special_number_category_item.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/special_number_item.xml" value="0.28869047619047616" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/vehicle_features_item.xml" value="0.33" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/vehicle_item.xml" value="0.22" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/vehicles_item.xml" value="0.2" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/layout/video_itme.xml" value="0.19947916666666668" />
-        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/menu/buttomnavigation_home_page_menu.xml" value="0.5" />
+        <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/menu/buttomnavigation_home_page_menu.xml" value="0.18" />
         <entry key="..\:/Users/zyad/AndroidStudioProjects/Mowater/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.109375" />
       </map>
     </option>

@@ -65,7 +65,7 @@ public class AgencyDetailsFragment extends Fragment implements AgencyDetailsCont
     public void setData(Data data) {
         tvName.setText(data.getName().toString());
         tvDescription.setText(data.getDescription().toString());
-        ratingBar.setRating(2);
+        ratingBar.setRating(data.getRating());
         agencyObjcet = data;
     }
 

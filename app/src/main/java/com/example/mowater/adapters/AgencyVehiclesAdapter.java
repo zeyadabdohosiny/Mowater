@@ -39,7 +39,13 @@ public class AgencyVehiclesAdapter extends RecyclerView.Adapter<AgencyVehiclesAd
             tvVehiclesModel = itemView.findViewById(R.id.tv_vehicle_model_item);
             tvVehiclePrice = itemView.findViewById(R.id.tv_vehicle_price_item);
             tvVehiclePrice2 = itemView.findViewById(R.id.tv_vehicle_price1_item);
-            ivVehiclesImage=itemView.findViewById(R.id.iv_vehicle_image);
+            ivVehiclesImage = itemView.findViewById(R.id.iv_vehicle_image);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    listner.onItemClickListner(getAdapterPosition());
+                }
+            });
         }
     }
 

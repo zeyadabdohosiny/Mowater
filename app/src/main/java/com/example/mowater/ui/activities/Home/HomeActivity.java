@@ -1,5 +1,9 @@
 package com.example.mowater.ui.activities.Home;
 
+import android.content.IntentFilter;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -11,6 +15,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.mowater.R;
+import com.example.mowater.recievers.InternetCheack.InternetReceiverr;
 import com.example.mowater.ui.fragment.Cards.PackageFragment;
 import com.example.mowater.ui.fragment.CarsForSale.CarsForSaleFragment;
 import com.example.mowater.ui.fragment.Home.HomeFragment;
@@ -19,17 +24,29 @@ import com.example.mowater.ui.fragment.Offers.OffersFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements HomeActivityContract.View{
     // Views
     BottomNavigationView bottomNavigationView;
     // Variables
     public static final String TAG = "Home_Activity";
     HomeFragment homeFragment;
+    String token,deviceToken;
+    // SharedPreferences
+    SharedPreferences preferences;
+    SharedPreferences.Editor editor;
+    //
+    InternetReceiverr receiver =new InternetReceiverr();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        preferences=getSharedPreferences("zeyad",MODE_PRIVATE);
+        token=preferences.getString("token","");
+        Log.d(TAG, "onCreate: "+token);
         initButtomNavigation();
+
+
     }
 
     private void initButtomNavigation() {
@@ -102,4 +119,22 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void initSharedPreferance() {
+        preferences=getSharedPreferences("Zeyad",MODE_PRIVATE);
+        editor=preferences.edit();
+    }
+
+    @Override
+    protected void onStart() {
+//        IntentFilter filter=new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+//        registerReceiver(receiver,filter);
+        super.onStart();
+    }
+
+    @Override
+    protected void onDestroy() {
+     //   unregisterReceiver(receiver);
+        super.onDestroy();
+    }
 }

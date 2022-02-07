@@ -69,14 +69,13 @@ public class AgencyCategoriesFragment extends Fragment implements AgencyCategori
     @Override
     public void initRvAgentCategories(MutableLiveData<Data> agentCategoriesList) {
         if (getView() != null) {
-            rvAgencyCategories.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+            rvAgencyCategories.setLayoutManager(new GridLayoutManager(getActivity(), 3));
             agentCategoriesList.observe(getViewLifecycleOwner(), new Observer<Data>() {
                 @Override
                 public void onChanged(Data data) {
                     agencyCategoriesList=data.getData();
                     adapter = new AgencyCategoriesAdapter(data.getData());
                     rvAgencyCategories.setAdapter(adapter);
-
 
                 }
             });
